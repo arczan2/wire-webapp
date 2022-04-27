@@ -46,7 +46,6 @@ pipeline{
 				sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_LOGIN --password-stdin'
 				sh 'docker tag build-agent:latest arczan/jenkins-wireapp'
 				sh 'docker push arczan/jenkins-wireapp'
-
 			}
 			post {
 				failure {
