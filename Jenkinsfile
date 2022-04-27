@@ -23,6 +23,7 @@ pipeline{
 				}
 			}
 		}
+
 		stage('Test'){
 			steps {
 				echo 'Testing...'
@@ -40,6 +41,7 @@ pipeline{
 				}
 			}
 		}
+
 		stage('Deploy') {
 			steps {
 				echo 'Deploying...'
